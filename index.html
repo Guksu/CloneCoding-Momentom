@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>클론코딩1</title>
+    <title>Mometom</title>
+    <link href="css/index.css" rel="stylesheet">
 </head>
 
 <body>
-    <form class="hidden" id="Login-form">
-        <input
-        required
-        maxlength="15" 
-        type="text"
-        placeholder="What is your's name?"
-        />
-        <button>Log In</button>
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
-    <form id="todo-Form">
-        <input type="Text" placeholder="Write a To Do and Press Enter." required/>
-    </form>
-    <ul id="todo-List"></ul>
-    <h2 id="clock"> 00:00</h2>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
+    <div id="clock"></div>
     <div id="weather">
-        <div id="temp">
-            <span></span>
-        <div id="lo_weather">
-            <sapn></sapn>
-            <span></span>
-        </div>
+        <span></span>
+        <span>/ </span>
+        <span></span>
     </div>
-    <script src="jS/Greeting.js"></script>
-    <script src="js/Clock.js"></script>
-    <script src="js/Quoter.js"></script>
-    <script src="js/Background.js"></script>
-    <script src="js/Todo.js"></script>
-    <script src="js/weather.js"></script>
+    <div>
+        <form class="hidden" id="loginForm">
+            <input placeholder="이름을 입력하세요">
+        </form>
+        <h1 class="hidden" id="inputName"></div>
+    </div>
+    <div>    
+        <form id="todoForm">
+            <input type="text" placeholder="스케줄을 입력하세요">
+        </form>
+            <ul id="todoList"> 
+            </ul>
+    </div>
+    <script src="js/bg.js"></script>
+    <script src="js/geo.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/login.js"></script>
 </body>
+
 </html>
